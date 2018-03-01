@@ -32,9 +32,9 @@ def homepage2(request):
 def showpost2(request, slug):
     template =get_template('post2.html')
     try:
-        post= Post.objects.get(slug=slug)
-        if post != None:
+        post2= Post.objects.get(slug=slug)
+        if post2 != None:
             html= template.render(locals())
             return HttpResponse(html)
     except:
-            return HttpResponse('/')
+            return HttpResponse('/index2')
