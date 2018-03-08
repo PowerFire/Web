@@ -38,3 +38,8 @@ def showpost2(request, slug):
             return HttpResponse(html)
     except:
             return HttpResponse('/index2')
+
+def about(request):
+    template=get_template('my_self.html')
+    html=template.render(locals())
+    return HttpResponse(html)
