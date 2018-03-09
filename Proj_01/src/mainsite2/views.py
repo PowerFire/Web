@@ -43,3 +43,8 @@ def about(request):
     template=get_template('my_self.html')
     html=template.render(locals())
     return HttpResponse(html)
+
+def bootstrap_test(request):
+    template=get_template('test_base.html')
+    html=template.render(locals())
+    return HttpResponse(html)

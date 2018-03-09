@@ -25,4 +25,5 @@ urlpatterns = [
     path('index2/',views.homepage2),
     path('index2/post2/<str:slug>',views.showpost2),
     path('about',views.about),
-]
+    path('bootstrap_test',views.bootstrap_test),
+]  
