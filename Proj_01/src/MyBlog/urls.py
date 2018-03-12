@@ -27,4 +27,5 @@ urlpatterns = [
     path('about',views.about),
     path('bootstrap_test',views.bootstrap_test),
     path('list',views.listing),
+    path('list/<str:sku>',views.disp_detail),
 ]  
