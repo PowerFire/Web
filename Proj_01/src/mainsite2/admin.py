@@ -7,5 +7,8 @@ from mainsite2.models import Product
 class PostAdmin(admin.ModelAdmin):
     list_display=('title', 'slug', 'pub_date')
 
+class PostPhone(admin.ModelAdmin):
+    list_display=('name', 'price', 'qty')
+
 admin.site.register(Post, PostAdmin)
-admin.site.register(Product)
+admin.site.register(Product, PostPhone)

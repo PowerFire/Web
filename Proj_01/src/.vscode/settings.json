@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "${workspaceFolder}\\env\\Scripts\\python.exe"
+    "python.pythonPath": "${workspaceFolder}\\env\\Scripts\\python.exe",
+    "python.linting.enabled": false,
+    "python.autoComplete.extraPaths": ["D:/Study/Python_Djago/Proj_01/env/Lib/site-packages"]
 }

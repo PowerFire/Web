@@ -15,7 +15,7 @@ class Post(models.Model):
     class Meta:
         #指定文章要顯示的順序
         ordering=('-pub_date',)
-    
+    # 
     def __unicode__(self):
         return self.title
 
@@ -26,7 +26,8 @@ class Product(models.Model):
         ('M', 'Medium'),
         ('L', 'Large'),
     )
-    sku  = models.CharField(max_length=5);
+    sku  = models.CharField(max_length=10);
     name = models.CharField(max_length=20);
     price= models.PositiveIntegerField();
     size = models.CharField(max_length=1, choices=SIZES);
+    qty  = models.PositiveIntegerField(default=0);
