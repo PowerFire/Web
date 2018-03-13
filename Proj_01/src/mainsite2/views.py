@@ -41,12 +41,12 @@ def showpost2(request, slug):
 
 def about(request):
     template=get_template('my_self.html')
-    html=template.render(locals())
+    html=template.render()
     return HttpResponse(html)
 
 def bootstrap_test(request):
     template=get_template('test_base.html')
-    html=template.render(locals())
+    html=template.render()
     return HttpResponse(html)
 
 def listing(request):
@@ -70,7 +70,7 @@ def listing(request):
     products= Product.objects.all()
     tags= '<tr><td>品名</td><td>售價</td><td>庫存量</td></tr>'
     for p in products:
-        tags= tags+ '<tr><td>{}</td>'.format(p.name)
+        tags= tags+ '<tr><td><a href=/list/'+p.sku+'>{}</a></td>'.format(p.name)
         tags= tags+ '<td>{}</td>'.format(p.price)
         tags= tags+ '<td>{}</td></tr>'.format(p.qty)
     return HttpResponse(html.format(tags))
@@ -90,20 +90,19 @@ def disp_detail(request, sku):
             <table width=400 border=1 bgcolor='#CCFFCC'>
             {}
             </table>
-            <a herf='/list'>回列表</a>
+            <a href='/list'>回列表</a>
         </body>
         </html>
         '''
     try:
-        p= Product.object.get(sku=sku)
+        p= Product.objects.get(sku=sku)
     except Product.DoesNotExist:
         raise Http404('找不到指定品項編號')
-    
-    tags= '<tr><td>品項編號</td><td>{}</td></tr>'.format(p.sku)
+
+    tags= '<tr><td>品項編號</td><td>{}'.format(p.sku)
     tags=tags+'<tr><td>名稱</td><td>{}</td></tr>'.format(p.name)
     tags=tags+'<tr><td>售價</td><td>{}</td></tr>'.format(p.price)
     tags=tags+'<tr><td>數量</td><td>{}</td></tr>'.format(p.qty)
-
     return HttpResponse(html.format(p.name,p.name,tags))
 
 

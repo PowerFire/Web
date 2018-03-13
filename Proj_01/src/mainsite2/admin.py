@@ -8,7 +8,7 @@ class PostAdmin(admin.ModelAdmin):
     list_display=('title', 'slug', 'pub_date')
 
 class PostPhone(admin.ModelAdmin):
-    list_display=('name', 'price', 'qty')
+    list_display=('sku','name', 'price', 'qty')
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Product, PostPhone)
