@@ -26,7 +26,7 @@ def homepage2(request):
     template =get_template('index2.html')
     posts    =Post.objects.all()
     now      =datetime.now()
-    html     =template.render(locals())
+    html     =template.render({'posts':posts})
     return HttpResponse(html)
 
 def showpost2(request, slug):

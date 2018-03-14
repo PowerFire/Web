@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "${workspaceFolder}\\env\\Scripts\\python.exe",
+    "python.linting.enabled": false,
+    "python.autoComplete.extraPaths": ["${workspaceFolder}env/Lib/site-packages"]
+}

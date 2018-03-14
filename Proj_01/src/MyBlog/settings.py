@@ -125,6 +125,6 @@ STATIC_DIRS = [
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    '/path/to/others/static/',  # 用不到的时候可以不写这一行
+    '/path/to/others/static/',  # 非終端測試時，可以不寫這一行
 )
 
