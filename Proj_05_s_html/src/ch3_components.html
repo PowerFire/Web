@@ -14,9 +14,20 @@
     <link rel="stylesheet" href="./ch3_components.css">
 </head>
 <body>
-    <br> Ch3  Components：組件</br>
+    <br> Ch3  Components：提示組件 & 可關閉的提示- Alert</br>
     <div class="component_1">
-
+        <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <h4> alert </h4>
+            hello~
+            <br><a href="#" class="alert-link"> see more.</a></br>
+            <button class="close" data-dismiss="alert">
+                &times;
+            </button>
+        </div>
+        
+        <button class="btn btn-danger close-alert">
+            Close
+        </button>
     </div>
 </body>
 </html>
