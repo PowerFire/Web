@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app_myblog',
+    'app_myblog',   #Rody
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MyBlog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'Templates')],
+        'DIRS': [os.path.join(BASE_DIR,'Templates')],   #Rody
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -104,9 +104,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'zh_Hant'
+LANGUAGE_CODE = 'zh_Hant'   #Rody
 
-TIME_ZONE = 'Asia/Taipei'
+TIME_ZONE = 'Asia/Taipei'   #Rody
 
 USE_I18N = True
 
@@ -119,6 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+# + Rody
 STATIC_DIRS = [
     os.path.join(BASE_DIR, 'Static'),
 ]
@@ -127,3 +128,4 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "Static"),
     '/path/to/others/Static/',  # 非終端測試時，可以不寫這一行
 )
+# - Rody

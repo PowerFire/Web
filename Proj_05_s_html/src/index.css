@@ -1,0 +1,72 @@
+.container.demo {
+    background: #054bd1;
+    height: 10vh;
+    width:  100vh;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    background: #12bb4a;
+    height: 10vh;
+    color: rgb(224, 33, 33);
+    -webkit-font-smoothing: antialiased;
+}
+
+.rowAndcol {
+    background: #054bd1;
+    height: 10vh;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.rowAndcol_2 {
+    background: #23eb1d;
+    height: 10vh;
+    color: rgb(238, 30, 30);
+    -webkit-font-smoothing: antialiased;
+}
+
+.rowAndcol_3{
+    background: #054bd1;
+    height: 20vh;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+.rowAndcol_3 .row{
+    background: #04348d;
+    height: 10vh;
+}
+
+.rowAndcol_4{
+    background: #12e034;
+    height: 40vh;
+    color: rgb(218, 19, 19);
+    -webkit-font-smoothing: antialiased;
+}
+.rowAndcol_4 .row{
+    background: #77f167;
+    height: 10vh;
+}
+
+.rowAndcol_5{
+    background: #054bd1;
+    height: 20vh;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+.rowAndcol_5 .row{
+    background: #04348d;
+    height: 10vh;
+}
+
+.rowAndcol_6{
+    background: #12e034;
+    height: 40vh;
+    color: rgb(218, 19, 19);
+    -webkit-font-smoothing: antialiased;
+}
+.rowAndcol_6 .row{
+    background: #77f167;
+    height: 10vh;
+}

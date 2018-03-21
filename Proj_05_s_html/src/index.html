@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Study bootstrap</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./script.js" charset="utf-8"> </script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <br> Ch2-1 布局頁面 container：</br> 
+    <div class="container demo">
+        <h1>hello</h1>
+    </div>
+
+    <div class="container">
+        <h1>hello</h1>
+    </div>
+    <br> ==================================================================== </br>
+    <br> Ch2-2 網格系統：</br> 
+    <div class="rowAndcol">
+        <div class="row">
+            <div class="col"><span>1</span></div>
+            <div class="col"><span>2</span></div>
+            <div class="col"><span>3</span></div>
+            <div class="col"><span>1</span></div>
+            <div class="col"><span>2</span></div>
+            <div class="col"><span>3</span></div>
+        </div>
+    </div>
+    <br>  ==================================================================== </br>
+    <br> Ch2-3 網格系統：網格寬度為 12欄 </br> 
+    <div class="rowAndcol_2">
+        <div class="row">
+            <div class="col-6"><span>6網格寬度</span></div>
+            <div class="col-4"><span>4網格寬度</span></div>
+            <div class="col-2"><span>2網格寬度</span></div>
+            <!-- 分行 !-->
+            <!-- 方法一
+            <div class="w-100"></div>
+            !-->
+            <!-- 方法二 !-->
+        </div>
+        <div class="row">
+            <div class="col-2"><span>2網格寬度</span></div>
+            <div class="col-4"><span>4網格寬度</span></div>
+            <div class="col-6"><span>6網格寬度</span></div>
+        </div>
+    </div>
+    <br> ==================================================================== </br>
+    <br> Ch2-4 網格系統：垂直對齊 </br> 
+    <!--
+        技術一：
+        <div class="row align-items-start"> 前面對齊
+        <div class="row align-items-end">   下面對齊
+        <div class="row align-items-center"> 至中對齊
+
+        技術二：
+        row 對齊
+        <div class="row align-items-start"> 前面對齊
+        與
+        改css 增加
+        .rowAndcol_3 .row{
+            background: #04348d;
+            border-bottom: 1px solid #000
+        }
+
+        技術三：
+        改css 增加
+        .rowAndcol_3 .row{
+            background: #04348d;
+            border-bottom: 1px solid #000
+        }
+        與
+        .rowAndcol_3 .row{
+            background: #04348d;
+            height: 10vh;
+        }
+        結果不同
+
+        技術四：
+        col 對齊
+        <div class="col-4 align-self-end"><span>4網格寬度</span></div>
+        <div class="col-4 align-self-center"><span>4網格寬度</span></div>
+        <div class="col-4 align-self-start"><span>4網格寬度</span></div>
+    !-->
+    <div class="rowAndcol_3">
+        <div class="row">
+            <div class="col-4 align-self-end"><span>4網格寬度</span></div>
+            <div class="col-4 align-self-center"><span>4網格寬度</span></div>
+            <div class="col-4 align-self-start"><span>4網格寬度</span></div>
+        </div>
+    </div>
+    <br> ==================================================================== </br>
+   <br> Ch2-5 網格系統：水平對齊</br>
+    <!--
+        <div class="row justify-content-start"> ==>預設
+        <div class="row justify-content-center">
+        <div class="row justify-content-end">
+        <div class="row justify-content-between">
+        <div class="row justify-content-around">
+        <div class="row justify-content-around align-items-center">
+     !-->
+    <div class="rowAndcol_4">
+        <div class="row justify-content-start">
+            <div class="col-4 "><span>4網格寬度</span></div>
+            <div class="col-4 "><span>4網格寬度</span></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-4 "><span>4網格寬度</span></div>
+            <div class="col-4 "><span>4網格寬度</span></div>
+        </div>
+        <div class="row justify-content-end">
+                <div class="col-4 "><span>4網格寬度</span></div>
+                <div class="col-4 "><span>4網格寬度</span></div>
+            </div>
+    </div>
+    <br> ==================================================================== </br>
+    <br> Ch2-6 網格系統：排序與偏移</br>
+    <!--
+        排序
+        order-x x=1~12
+        offser-x
+     !-->
+    <div class="rowAndcol_5">
+        <div class="row justify-content-start">
+            <div class="col-4 order-3"><span>1</span></div>
+            <div class="col-4 order-2"><span>2</span></div>
+            <div class="col-4 order-1"><span>3</span></div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-4 offset-2"><span>1</span></div>
+            <div class="col-4 offset-1"><span>2</span></div>
+            <div class="col-4 offset-0"><span>3</span></div>
+        </div>
+    </div>
+    <br> ==================================================================== </br>
+    <br> Ch2-7 網格系統：排序與偏移</br>
+    <!--
+        排序
+        order-x x=1~12
+        offser-x
+     !-->
+    <div class="rowAndcol_6">
+        <div class="row justify-content-start">
+            <div class="col-sm-6 col-lg-3"><span>1</span></div>
+            <div class="col-sm-6 col-lg-3"><span>2</span></div>
+            <div class="col-sm-6 col-lg-3"><span>3</span></div>
+            <div class="col-sm-6 col-lg-3"><span>4</span></div>
+        </div>
+    </div>
+</body>
+</html>
