@@ -29,5 +29,183 @@
             Close
         </button>
     </div>
+
+    <br>=================================
+    <br> Ch3  Components：標籤組件 - Badge
+    <br>  一般網站有新的內容，新的內容開始可以有個標籤
+    <div class="component_2">
+        <br>
+        <span class="badge badge-primary badge-pill">New</span>
+        <br>
+        <button class="btn btn-primary">
+            <span class="badge badge-primary badge-pill">New</span>
+        </button>
+    </div>
+
+    <br>=================================
+    <br> Ch3  Components：導航路徑 - Breadcrumb
+    <br>        顯示用戶在網站的位置
+    <br>
+    <!--
+        頁面的檢視原始碼
+        ->Elements 頁面，點到 li後
+        ->Styles 頁面，找到   .breadcrumb-item+.breadcrumb-item::before  內的 content，就可以更改 "格式"
+     !-->
+    <div class="component_3">
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                <li class="breadcrumb-item"><a href="#">課程</a></li>
+                <li class="breadcrumb-item active"Bootstrap</a></li>
+            </ol>
+        </nav>
+    </div>
+
+    <br>=================================
+    <br> Ch3  Components：按鈕組件 - Button
+    <br>
+    <div class="component_4">
+        <a href="#" class="btn btn-danger"> Button</a>
+        <br>
+        <button href="#" class="btn btn-danger"> Button</a>
+        <br>
+        <button href="#" class="btn btn-outline-danger btn-lg btn-block"> Button</a>
+        <br>
+        <button href="#" class="btn btn-outline-danger btn-lg btn-block" disabled> Button</a>
+    </div>
+
+    <br>=================================
+    <br> Ch3  Components：按鈕群組 - Button Goup
+    <div class="component_5">
+        <div class="div btn-group">
+            <button class="btn btn-secondary">1</button>
+            <button class="btn btn-secondary">2</button>
+            <button class="btn btn-secondary">3</button>
+        </div>
+        <br>
+        <div class="div btn-group-vertical btn-group-sm">
+            <button class="btn btn-secondary">1</button>
+            <button class="btn btn-secondary">2</button>
+            <button class="btn btn-secondary">3</button>
+        </div>
+    </div>
+
+    <br>=================================
+    <br> Ch3  Components：卡片 - Card
+    <div class="component_6">
+        <div class="card">
+            <div class="card-head"></div>
+            <h4>card</h4>
+            <div class="card-body">
+            <h4 class="car-title">Title</h4>
+            <p class="card-text">description...</p>
+            <a href="" class="card-link">action1</a>
+            <a href="" class="card-link">action2</a>
+            </div>
+        </div>
+        <div class="card-footer">footer</div>
+        <br>---------------------------------------
+        <br>右對齊 <!-- 居中 text-center !-->
+        <div class="card text-right">
+            <div class="card-head"></div>
+            <h4>card</h4>
+            <div class="card-body">
+                <h4 class="car-title">Title</h4>
+                <p class="card-text">description...</p>
+                <a href="" class="card-link">action1</a>
+                <a href="" class="card-link">action2</a>
+            </div>
+            <div class="card-footer">footer</div>
+        </div>
+        <br>---------------------------------------
+        <br>圖片 1
+        <div class="card text-center">
+            <!-- "card-imag-top" ==> 顯示在頂端，且四角有圓的效果 !-->
+            <img src="./img/1.jpg" alt="" class="card-imag-top">
+            <div class="card-body">
+                <h4 class="car-title">Title</h4>
+                <p class="card-text">description...</p>
+                <a href="" class="card-link">action1</a>
+                <a href="" class="card-link">action2</a>
+            </div>
+            <div class="card-footer">footer</div>
+        </div>
+        <br>---------------------------------------
+        <br>圖片 2
+        <!--  卡片文字變成白色 text-white !-->
+        <div class="card text-center text-white">
+            <img src="./img/1.jpg" alt="" class="card-imag">
+            <!--  card-img-overlay 文字在img上 !-->
+            <div class="card-img-overlay">
+                <h4 class="car-title">Title</h4>
+                <p class="card-text">description...</p>
+                <a href="" class="card-link">action1</a>
+                <a href="" class="card-link">action2</a>
+            </div>
+            <div class="card-footer">footer</div>
+        </div>
+    </div>
+    <br>=================================
+    <br> Ch3  Components：卡片群組與佈局 - Card group & Layout
+    <div class="component_7">
+        <br> Card Group 1
+        <br>
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="car-title">Title</h4>
+                    <p class="card-text">description...</p>
+                    <p class="card-text">description...</p>
+                    <p class="card-text">description...</p>
+                    
+                </div>
+                <div class="card-footer">
+                    <a href="" class="card-link">action1</a>
+                    <a href="" class="card-link">action2</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="car-title">Title</h4>
+                    <p class="card-text">description...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="card-link">action1</a>
+                    <a href="" class="card-link">action2</a>
+                </div>
+            </div>
+        </div>
+        <br> Card Group 2
+        <br>
+        <!-- card 之間有間隔 class="card-deck"
+             card layout 為列放 class="card-columns"
+         !-->
+        <div class="card-columns">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="car-title">Title</h4>
+                    <p class="card-text">description...</p>
+                    <p class="card-text">description...</p>
+                    <p class="card-text">description...</p>
+                    
+                </div>
+                <div class="card-footer">
+                    <a href="" class="card-link">action1</a>
+                    <a href="" class="card-link">action2</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="car-title">Title</h4>
+                    <p class="card-text">description...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="" class="card-link">action1</a>
+                    <a href="" class="card-link">action2</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
