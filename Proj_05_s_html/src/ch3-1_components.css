@@ -1,0 +1,10 @@
+.components3_1_4 .carousel-item {
+    height: 300px;
+}
+
+.components3_1_4 .carousel-item img {
+    min-hight: 300px;
+    max-hight: 400px;
+    /*object-fit: cover 保持圖像原有的比例*/
+    object-fit: cover;
+}

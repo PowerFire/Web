@@ -6,24 +6,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="./ch3-1_components.js" charset="utf-8"> </script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ch3-1_components.css">
   </head>
   <body>
         <br> Ch3-1  Components：Carousel-選轉木馬
         <br> 類似幻燈片
         <div class="components3_1_1">
-            <!-- 選轉屬性 cs 方法: data-ride="carousel ，也可用js"!-->
+            <!-- 選轉屬性 cs 方法: data-ride="carousel ，也可用js"
+                data-interval="1000" 改為1s換一次，預設5秒
+             !-->
             <!--carusel 直接變換的效果
                 carusel slide 變換圖片為滑動的效果
             !-->
-            <div class="carousel slide" data-ride="carousel">
+            <div class="carousel slide" data-ride="carousel" data-interval="1000">
                 <div class="carousel-inner">
                     <!-- active 為第一張!-->
                     <div class="carousel-item  active">
@@ -81,6 +85,95 @@
                         <img class="d-block w-100" src="./img/3.jpg" alt="">
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <br>=================================
+        <br> Ch3-1  Components：Carousel-調整選轉木馬的顯示
+        <div class="components3_1_4">
+            <div class="carousel slide demo" id="components3_1_4">
+                <ol class="carousel-indicators">
+                    <li data-target="#components3_1_4" data-slide-to="0" class="active"></li>
+                    <li data-target="#components3_1_4" data-slide-to="1"></li>
+                    <li data-target="#components3_1_4" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./img/1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./img/3.jpg" alt="">
+                    </div>
+                </div>
+                <a href="#components3_1_4" class="carousel-control-prev " data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#components3_1_4" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+        <br>=================================
+        <br> Ch3-1  Components：Carousel-配置選項、方法與事件
+        <!-- 除了自定義的 " data-ride="carousel" " 方法外的 javascript(js)方法
+         !-->
+        <div class="components3_1_5 slide">
+            <div class="carousel slide demo" id="components3_1_5">
+                <ol class="carousel-indicators">
+                    <li data-target="#components3_1_5" data-slide-to="0" class="active"></li>
+                    <li data-target="#components3_1_5" data-slide-to="1"></li>
+                    <li data-target="#components3_1_5" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-50" src="./img/1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-50" src="./img/2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-50" src="./img/3.jpg" alt="">
+                    </div>
+                </div>
+                <a href="#components3_1_5" class="carousel-control-prev " data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#components3_1_5" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+        <br>=================================
+        <br> Ch3-1  Components：Carousel-配置選項、方法與事件
+        <div class="components3_1_6 slide">
+            <div class="carousel slide demo" id="components3_1_6">
+                <ol class="carousel-indicators">
+                    <li data-target="#components3_1_6" data-slide-to="0" class="active"></li>
+                    <li data-target="#components3_1_6" data-slide-to="1"></li>
+                    <li data-target="#components3_1_6" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-50" src="./img/1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-50" src="./img/2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-50" src="./img/3.jpg" alt="">
+                    </div>
+                </div>
+                <a href="#components3_1_6" class="carousel-control-prev " data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a href="#components3_1_6" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
   </body>
