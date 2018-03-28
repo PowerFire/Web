@@ -511,5 +511,90 @@
           </nav>
 
       </div>
+
+
+      <br>=================================
+      <br> Ch3-2_17  Components：Pagination：分頁器
+      <div class="component3_2_17" style="height: 300vh">
+        
+        <!--
+          <ul class="pagination pagination-sm"> ==>變小
+          <ul class="pagination pagination-lg"> ==>變大
+          <ul class="pagination pagination-lg justify-content-end"> ==> 向右對齊
+          <ul class="pagination pagination-lg justify-content-center"> ==> 居中
+         !-->
+        <ul class="pagination">
+          <!-- 
+                <li class="page-item disabled"> ==> disabled 禁用
+           !-->
+          <li class="page-item disabled">
+            <a href="#" class="page-link">後退</a>
+          </li>
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">前進</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <br>=================================
+      <br> Ch3-2_18  Components：Popovers：提示信息
+      <div class="component3_2_18" style="height: 300vh">
+        
+        <!--
+          data-placement="bottom" bottom 可以被換成 right left top 
+          data-trigger="focus" ==>設定成任何地方點一下就可以隱藏訊息
+         !-->
+        <button class="btn btn-primary"
+          data-toggle="popover"
+          title="一重山"
+          data-content="AAAAAAA"
+          data-placement="bottom"
+          data-trigger="focus">
+              Pop
+        </button>
+        
+
+      </div>
+
+
+      <br>=================================
+      <br> Ch3-2_19  Components：Progress-進度條
+      <div class="component3_2_19" style="height: 300vh">
+        
+        
+        <div class="progress">
+          <!--
+            progress-bar-animated==>動起來
+            progress-bar-striped ==>橫紋
+            bg-danger           ==>改變顏色
+           !-->
+          <div class="bg-danger progress-bar  progress-bar-striped progress-bar-animated" style="width:32%" >
+            32%
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <br>=================================
+      <br> Ch3-2_20  Components：Scrollspy 滾動間諜
+      <div class="component3_2_20" style="height: 300vh">
+        
+        
+        
+
+
+      </div>
   </body>
 </html>

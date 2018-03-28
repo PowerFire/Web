@@ -56,4 +56,7 @@ $(document).ready(() => {
         console.log('hidden')
     })
 
+
+    //Ch3-2_18  Components：Popovers：提示信息
+    $('[data-toggle="popover"]').popover()
 })
