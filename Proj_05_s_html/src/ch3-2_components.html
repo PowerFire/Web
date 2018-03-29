@@ -17,7 +17,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./ch3-2_components.css">
   </head>
-  <body>
+  <!--
+     Ch3-2_20  Components：Scrollspy 滾動間諜
+     原本
+     <body
+     改為
+     <body data-spy="scroll" data-target="#nav-demo">
+  !-->
+  <body data-spy="scroll" data-target="#nav-demo">
       <br> Ch3-2_0  Components：Collapse-切換內容的準確性
       <div class="div component3_2_0">
         <a href="#collapse-demo" class="btn btn-primary" data-toggle="collapse">
@@ -592,7 +599,52 @@
       <div class="component3_2_20" style="height: 300vh">
         
         
-        
+        <div class="row">
+              <div class="col-3">
+                <!--
+                  <ul class="nav nav-pills position-fixed bg-light p-3 text-right">
+                !-->
+                <ul id="nav-demo" class="nav nav-pills flex-column bg-light p-3 text-right">
+                  <li class="nav-item">
+                    <a href="#html" class="nav-link">HTML_Scrollspy</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#css" class="nav-link">CSS_Scrollspy</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#JS" class="nav-link">JS_Scrollspy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-9">
+                <h3 id="html">HTML</h3>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+
+                <h3 id="css">CSS</h3>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+
+                <h3 id="JS">JS</h3>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+                <p>Lorem asdasd d asd asd asdadsdasda asd ad ad ad sd a asd ad a a dad ad da asd asd asd asd ad asd asd ad a ad as</p>
+              </div>
+          
+        </div>
 
 
       </div>
