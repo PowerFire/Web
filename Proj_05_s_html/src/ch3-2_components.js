@@ -59,4 +59,7 @@ $(document).ready(() => {
 
     //Ch3-2_18  Components：Popovers：提示信息
     $('[data-toggle="popover"]').popover()
+
+    //Ch3-2_21  Components：Tooltip 工具提示
+    $('[data-toggle="tooltip"]').tooltip()
 })
