@@ -21,10 +21,103 @@
         <div class="forms 4_1_0" style="height: 20vh" >
         
         <label for="email">郵件地址</label>
-        <input id="email" class="form-control" type="text" placeholder="Email" style="width:auto">
+        <input id="email"
+               class="form-control" type="text"
+               placeholder="Email" style="width:auto">
         <small class="form-text text-muted">請輸入正確的電子郵件地址，接收重要的通知</small>
             
         </div>
+
+
+        <br> =======================
+        <br> Ch4-1_1  Forms：文本框的變化與附加顯示
+        <div class="forms 4_1_1" style="height: 20vh" >
+        
+            <!--
+                form-control-lg、form-control-sm
+                <input class="form-control form-control-lg" readonly type="text" placeholder="輸入..." style="width:auto"> ==> 僅有讀的狀態
+                form-control-plaintext、"form-control
+            !-->
+            <input class="form-control form-control-lg" type="text" placeholder="輸入 1..." style="width:auto">
+            <br> -------------------------------------------
+            <input class="form-control-plaintext form-control-lg" type="text" placeholder="輸入 2..." style="width:auto">
+            <br> -------------------------------------------
+            <div class="input-group" style="width:20%">
+                <span class="input-group-addon">@</span>
+                <input class="form-control" type="text" placeholder="輸入 3..." >
+                <span class="input-group-btn">
+                    <button class="btn btn-primary">Go</button>
+                </span>
+            </div>
+            
+        </div>
+
+        <br>
+        <br>
+        <br> =======================
+        <br> Ch4-1_2  Forms：複選框與單選按鈕
+        <div class="forms 4_1_2" style="height: 20vh" >
+            複選框
+            <div class="form-check">
+                <label for="" class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    A 1
+                </label>
+            </div>
+            <div class="form-check">
+                <label for="" class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    B 1
+                </label>
+            </div>
+            <div class="form-check">
+                <label for="" class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    C 1
+                </label>
+            </div>
+            <br>-------------------------------------------------------------------
+            <br>複選框
+            <div class="form-check form-check-inline">
+                <label for="" class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    A 2
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label for="" class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    B 2
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label for="" class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    C 2
+                </label>
+            </div>
+            <br>-------------------------------------------------------------------
+            <br>單選按鈕
+            <div class="form-check form-check-inline">
+                <label for="" class="form-check-label">
+                    <input type="radio" name="TheSameGroup" value="a" class="form-check-input">
+                    A 2
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label for="" class="form-check-label">
+                    <input type="radio" name="TheSameGroup" value="b" class="form-check-input">
+                    B 2
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label for="" class="form-check-label">
+                    <input type="radio" name="TheSameGroup" value="c" class="form-check-input">
+                    C 2
+                </label>
+            </div>
+        </div>
+        
 
     </body>
 </html>
